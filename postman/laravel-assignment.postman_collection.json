@@ -1,0 +1,74 @@
+{
+  "info": {
+    "_postman_id": "e9c87b0a-0fea-4b54-9bc4-4460b472abbb",
+    "name": "laravel assignment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "20411768"
+  },
+  "item": [
+    {
+      "name": "Classification",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"text\": \"My order arrived broken\" }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/classify",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "classify"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "generate-email",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"purpose\": \"Apologize for a delayed order\", \"recipient_name\": \"Rahul\", \"tone\": \"apologetic\" }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/generate-email",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "generate-email"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
